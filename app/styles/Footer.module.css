@@ -1,9 +1,10 @@
 /* Footer styles */
 .footer {
   flex-shrink: 0;
+  color: #4f46e5;
 
-  color: #fff;
-  padding: 1rem 0;
+  background-color: #faf5ff;
+  padding: 2rem 4rem;
   font-family: Arial, sans-serif;
 }
 
@@ -39,7 +40,7 @@
 }
 
 .footerSection ul li a {
-  color: #fff;
+  color: #4f46e5;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.9rem;

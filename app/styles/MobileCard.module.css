@@ -1,0 +1,140 @@
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: linear-gradient(45deg, #e8d4d4, #eff6ff);
+  padding: 1rem;
+}
+
+.cardWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.cardBackground {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #4f46e5, #5a1075, #45b7d1);
+  opacity: 0.8;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.cardContent {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.titleGradient {
+  background: linear-gradient(to right, #4f46e5, #5a1075);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cardSubtitle {
+  font-size: 1.25rem;
+  color: #e5e7eb;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cardButton {
+  background-color: #4f46e5;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardButton:hover {
+  background-color: #ff69b4;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes gradientAnimation {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .cardWrapper {
+    max-width: 40rem;
+  }
+
+  .cardContent {
+    padding: 3.5rem;
+  }
+
+  .cardTitle {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .cardSubtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .cardButton {
+    font-size: 1.25rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 640px) {
+  .cardWrapper {
+    max-width: 90%;
+  }
+
+  .cardTitle {
+    font-size: 2rem;
+  }
+
+  .cardSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .cardButton {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}

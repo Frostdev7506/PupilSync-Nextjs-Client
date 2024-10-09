@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Theme appearance="dark">
+        <Theme>
           <Navbar />
           <div
             style={{ flexGrow: 1, minHeight: "100vh", paddingBottom: "200px" }}

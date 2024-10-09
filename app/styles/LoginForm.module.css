@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formContainer {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.headingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 0 15px;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.arrowButton:hover {
+  transform: scale(1.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  margin-bottom: 30px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-width: 3px;
+  border-color: var(--primary-color);
+}
+
+.redBorder {
+  border-color: var(--error-color);
+}
+
+.errorText {
+  color: var(--error-color);
+  font-size: 0.875rem;
+}
+
+.submitButton {
+  background: white;
+  color: #5a1075;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submitButton:hover {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .input,
+  .submitButton {
+    font-size: 0.875rem;
+  }
+}

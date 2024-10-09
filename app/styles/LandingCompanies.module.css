@@ -1,0 +1,90 @@
+.landingCompaniesContainer {
+  background-color: #000;
+  color: #fff;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.landingCompaniesLogos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.landingCompaniesLogos span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.landingCompaniesQuoteContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.landingCompaniesQuote {
+  font-size: 2rem;
+  line-height: 1.4;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.landingCompaniesQuoteMarkLeft,
+.landingCompaniesQuoteMarkRight {
+  font-size: 4rem;
+  color: #4ade80;
+  position: absolute;
+  line-height: 0;
+}
+
+.landingCompaniesQuoteMarkLeft {
+  left: -2rem;
+  top: 0.5rem;
+}
+
+.landingCompaniesQuoteMarkRight {
+  right: -2rem;
+  bottom: 0;
+}
+
+.landingCompaniesAuthor {
+  font-size: 1.2rem;
+  color: #a3a3a3;
+}
+
+@media (max-width: 768px) {
+  .landingCompaniesLogos {
+    gap: 1rem;
+  }
+
+  .landingCompaniesLogos span {
+    font-size: 1rem;
+  }
+
+  .landingCompaniesQuote {
+    font-size: 1.5rem;
+  }
+
+  .landingCompaniesQuoteMarkLeft,
+  .landingCompaniesQuoteMarkRight {
+    font-size: 3rem;
+  }
+
+  .landingCompaniesQuoteMarkLeft {
+    left: -1.5rem;
+  }
+
+  .landingCompaniesQuoteMarkRight {
+    right: -1.5rem;
+  }
+
+  .landingCompaniesAuthor {
+    font-size: 1rem;
+  }
+}

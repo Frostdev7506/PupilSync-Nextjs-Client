@@ -1,0 +1,88 @@
+.statistics-section {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 64px 16px;
+  text-align: center;
+}
+
+.statistics-section__title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.statistics-section__subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+}
+
+.statistics-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .statistics-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .statistics-section__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.statistics-section__stat {
+  max-width: 400px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-section__stat--orange {
+  background-color: #fff7ed;
+}
+.statistics-section__stat--red {
+  background-color: #fef2f2;
+}
+.statistics-section__stat--blue {
+  background-color: #eff6ff;
+}
+.statistics-section__stat--purple {
+  background-color: #faf5ff;
+}
+
+.statistics-section__stat-number {
+  color: #4338ca;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.statistics-section__stat-label {
+  color: #4b5563;
+}
+
+.statistics-section__button {
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  transition: background-color 0.3s;
+}
+
+.statistics-section__button:hover {
+  background-color: #4338ca;
+}

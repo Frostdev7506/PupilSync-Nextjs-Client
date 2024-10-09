@@ -13,10 +13,10 @@ const LandingCompanies: React.FC = () => {
 
       <div className={styles.landingCompaniesQuoteContainer}>
         <p className={styles.landingCompaniesQuote}>
-          <span className={styles.landingCompaniesQuoteMarkLeft}>"</span>
+          <span className={styles.landingCompaniesQuoteMarkLeft}>&quot;</span>
           The best software ever created for leveraging AI in building
           interactive experiences for the Web.
-          <span className={styles.landingCompaniesQuoteMarkRight}>"</span>
+          <span className={styles.landingCompaniesQuoteMarkRight}>&quot;</span>
         </p>
         <p className={styles.landingCompaniesAuthor}>
           Tiago Forte, author of Building A Second Brain

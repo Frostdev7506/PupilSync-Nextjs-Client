@@ -1,5 +1,4 @@
 // pages/page.tsx
-import { Em, Strong, Text } from "@radix-ui/themes";
 
 import LandingCompanies from "./components/LandingCompanies";
 import StatisticsSection from "./components/StatisticsSection";

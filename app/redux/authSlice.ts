@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { decode as jwt_decode } from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 interface AuthState {
   token: string | null;
@@ -42,7 +42,7 @@ export const loginAsync = createAsyncThunk(
       dispatch(setIsAdminLogin(appType === "admins"));
       localStorage.setItem("token", data.token);
 
-      const decodedToken = jwt_decode(data.token) as { username: string };
+      const decodedToken = jwtDecode(data.token) as { username: string };
       const { username } = decodedToken;
       dispatch(setUserName(username));
       localStorage.setItem("userName", username);

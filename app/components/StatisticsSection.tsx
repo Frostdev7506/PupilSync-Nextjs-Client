@@ -31,8 +31,8 @@ const StatisticsSection: React.FC = () => {
         A Platform Trusted by Students Worldwide
       </h1>
       <p className={styles["statistics-section__subtitle"]}>
-        Don't Just Take Our Word for It. Delve into the Numbers and Witness the
-        Excellence for Yourself!
+        Don&apos;t Just Take Our Word for It. Delve into the Numbers and Witness
+        the Excellence for Yourself!
       </p>
 
       <div className={styles["statistics-section__grid"]}>
